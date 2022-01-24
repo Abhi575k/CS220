@@ -1,4 +1,4 @@
-module one_bit_full_adder(input A, input B, input C_in, output S, output C_out);
+module one_bit_full_adder(input A, input B, input C_in, output S, output C_out);        //inputs A, B and carry in and outputs their sum and carry out
 
     wire x, y, z;
 
