@@ -1,7 +1,7 @@
 `include "A1Q1_one_bit_full_adder.v"
 
-module eight_bit_ripple_carry_adder(A, B, C_in, S, C_out);      //eight bit ripple carry adder which uses
-
+module eight_bit_ripple_carry_adder(A, B, C_in, S, C_out);      //eight bit ripple carry adder which inputs 8-bit binary numbers
+                                                                //A and B and returns their sum and carry out
     input [7:0] A, B;
     input C_in;
     output [7:0] S;
