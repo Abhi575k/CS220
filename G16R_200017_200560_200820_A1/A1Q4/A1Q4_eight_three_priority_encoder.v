@@ -23,6 +23,8 @@ module eight_three_priority_encoder(A, S);
                 S = 3'b110;
             else if (A[7])
                 S = 3'b111;
+            else
+                S = 3'bxxx;
     end
 
 endmodule
