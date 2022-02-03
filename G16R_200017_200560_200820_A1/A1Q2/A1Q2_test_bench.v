@@ -3,9 +3,9 @@
 module test_bench;
 
     reg [7:0] A, B;
-    wire lower, equal, greater;
+    wire l, e, g;
 
-    eight_bit_comparator eb1 (A, B, lower, equal, greater);
+    eight_bit_comparator eb1 (A, B, l, e, g);
 
     initial begin
         A = 8'b00000001;
@@ -48,7 +48,7 @@ module test_bench;
     end
 
     initial begin
-        $monitor ("Time = %d A = %b B = %b lower = %b equal = %b greater = %b", $time, A, B, lower, equal, greater);
+        $monitor ("Time = %d A = %b B = %b AgB = %b BgA = %b AeB = %b", $time, A, B, l, g, e);
     end
     
 endmodule

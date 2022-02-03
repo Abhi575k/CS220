@@ -9,7 +9,6 @@ module one_bit_comparator(A, B, lower, equal, greater);
 
     and(lower, ~A, B);
     and(greater, ~B, A);
-    
     nor(equal, lower, greater);
 
 endmodule
