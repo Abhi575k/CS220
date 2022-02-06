@@ -68,7 +68,7 @@ module test_bench;
         #5;
         A = 2;
         B = 13;
-        cin = 1;
+        cin = 0;
     end
 
     initial begin
