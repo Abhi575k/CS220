@@ -1,11 +1,11 @@
 `include "A2Q1_carry_look_ahead_adder.v"
 
 module test_bench;
-    reg [3:0] A;
-    reg [3:0] B;
+    reg [7:0] A;
+    reg [7:0] B;
     reg cin;
 
-    wire [3:0] sum;
+    wire [7:0] sum;
     wire cout;
 
     carry_look_ahead_adder cla (A, B, cin, sum, cout);
