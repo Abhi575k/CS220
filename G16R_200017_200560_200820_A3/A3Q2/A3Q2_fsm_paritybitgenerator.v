@@ -1,8 +1,5 @@
-module fsm_sequence_detector (in, reset, out);
+module fsm_sequence_detector (input logical in, input logical reset, output logical out);
 
-    input in, reset;
-    output out;
-    reg out;
     reg [2:0] state;
 
     always @(in) begin
