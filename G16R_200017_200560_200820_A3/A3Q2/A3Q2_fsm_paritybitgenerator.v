@@ -2,7 +2,7 @@ module fsm_sequence_detector (input logical in, input logical reset, output logi
 
     reg [2:0] state;
 
-    always @(in) begin
+    always @(in or state or reset) begin
         if (reset)
         begin
             out = 1'b0;
