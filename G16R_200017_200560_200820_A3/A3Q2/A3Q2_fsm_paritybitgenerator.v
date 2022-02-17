@@ -1,4 +1,4 @@
-module fsm_sequence_detector (input logical in, input logical reset, output logical out);
+module fsm_sequence_detector (input logic in, input logic reset, output logic out);
 
     reg [2:0] state;
 
