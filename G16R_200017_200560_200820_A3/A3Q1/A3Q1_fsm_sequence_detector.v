@@ -1,8 +1,5 @@
-module fsm_sequence_detector (in, reset, out);
+module fsm_sequence_detector (input logic in, input logic reset, output logic out);
 
-    input in, reset;
-    output out;
-    reg out;
     reg [1:0] state = 2'b00;
     
     always @(state or in) begin
@@ -22,7 +19,7 @@ module fsm_sequence_detector (in, reset, out);
                 end
             2'b01:
                 begin
-                    if (in) state = 2'b00;
+                    if (in) state = 2'b01;
                     else state = 2'b10;
                     out = 0;
                 end
@@ -37,7 +34,7 @@ module fsm_sequence_detector (in, reset, out);
                     if (in)
                     begin
                         out = 0;
-                        state = 2'b00;
+                        state = 2'b01;
                     end
                     else
                     begin
